@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 0,
     "passes": 0,
     "pending": 0,
-    "failures": 2,
-    "start": "2021-02-24T19:53:26.231Z",
-    "end": "2021-02-24T19:54:13.144Z",
-    "duration": 46913,
+    "failures": 0,
+    "start": "2021-03-01T11:40:21.066Z",
+    "end": "2021-03-01T11:40:21.927Z",
+    "duration": 861,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true,
     "passPercentClass": "danger",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "458387a8-14ac-4f61-b93c-4dd946db8f50",
+    "uuid": "c5553050-ab5c-4247-b25d-3aec60fe6085",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,40 +28,48 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "f6279718-5771-437d-b5d1-69924fb618c2",
+        "uuid": "4189a5fb-bb4f-44e1-978f-2e48e467b1bd",
         "title": "Google search automated testing",
         "fullFile": "/Users/geancarlocordova/Sviluppo/NodeJs/Automation-With-Selenium-And-Node.js/test/homePage.test.js",
         "file": "/test/homePage.test.js",
         "beforeHooks": [
           {
-            "title": "\"before each\" hook",
-            "fullTitle": "Google search automated testing \"before each\" hook",
+            "title": "\"before each\" hook for \"find the input box and google search button\"",
+            "fullTitle": "Google search automated testing \"before each\" hook for \"find the input box and google search button\"",
             "timedOut": false,
-            "duration": 7136,
+            "duration": 856,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
-            "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.leggo.it');",
-            "err": {},
+            "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.google.it');",
+            "err": {
+              "message": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /Applications/Brave Browser.app/Contents/MacOS/Brave Browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.16.0 x86_64)",
+              "estack": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /Applications/Brave Browser.app/Contents/MacOS/Brave Browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.16.0 x86_64)\n    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:585:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:533:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:468:26)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
+            },
             "isRoot": false,
-            "uuid": "45f2a464-cd4c-46a7-a228-adbd44727e54",
+            "uuid": "fc4c59e5-9c7e-431e-987d-d482c6ec7c2a",
             "isHook": true,
             "skipped": false
           }
         ],
         "afterHooks": [
           {
-            "title": "\"after each\" hook",
-            "fullTitle": "Google search automated testing \"after each\" hook",
+            "title": "\"after each\" hook for \"find the input box and google search button\"",
+            "fullTitle": "Google search automated testing \"after each\" hook for \"find the input box and google search button\"",
             "timedOut": false,
-            "duration": 1318,
+            "duration": 0,
+            "state": "failed",
             "pass": false,
-            "fail": false,
+            "fail": true,
             "pending": false,
             "code": "await page.quit();",
-            "err": {},
+            "err": {
+              "message": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /Applications/Brave Browser.app/Contents/MacOS/Brave Browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.16.0 x86_64)",
+              "estack": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /Applications/Brave Browser.app/Contents/MacOS/Brave Browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.16.0 x86_64)\n    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:585:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:533:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:468:26)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
+            },
             "isRoot": false,
-            "uuid": "9c9bb525-2a11-49c7-ab95-a8b71028ebbe",
+            "uuid": "271fe3a6-81ed-4385-8b52-96a1e74f29d4",
             "isHook": true,
             "skipped": false
           }
@@ -71,50 +79,42 @@
             "title": "find the input box and google search button",
             "fullTitle": "Google search automated testing find the input box and google search button",
             "timedOut": false,
-            "duration": 15003,
-            "state": "failed",
+            "duration": 0,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
             "code": "const result = await page.findInputAndButton();\nexpect(result.inputEnabled).to.equal(true);\nexpect(result.buttonText).to.include('Google');",
-            "err": {
-              "message": "TimeoutError: Looking for element\nWait timed out after 15000ms",
-              "estack": "TimeoutError: Looking for element\nWait timed out after 15000ms\n    at /Users/geancarlocordova/Sviluppo/NodeJs/Automation-With-Selenium-And-Node.js/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "a9e32285-8360-46d8-9c23-c0c31d0f5a64",
+            "uuid": "98e63f19-992b-4acb-b2de-f7e5af81227e",
             "isHook": false,
-            "skipped": false
+            "skipped": true
           },
           {
             "title": "put keyword in search box and click search button",
             "fullTitle": "Google search automated testing put keyword in search box and click search button",
             "timedOut": false,
-            "duration": 15009,
-            "state": "failed",
+            "duration": 0,
             "pass": false,
-            "fail": true,
+            "fail": false,
             "pending": false,
             "code": "const result = await page.submitKeywordAndGetResult();\nexpect(result.length).to.be.above(10);",
-            "err": {
-              "message": "TimeoutError: Looking for element\nWait timed out after 15008ms",
-              "estack": "TimeoutError: Looking for element\nWait timed out after 15008ms\n    at /Users/geancarlocordova/Sviluppo/NodeJs/Automation-With-Selenium-And-Node.js/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"
-            },
+            "err": {},
             "isRoot": false,
-            "uuid": "006ae069-f5f6-479e-bb5e-1e2bf887ecff",
+            "uuid": "b0511925-756e-45e6-b026-657c595e43db",
             "isHook": false,
-            "skipped": false
+            "skipped": true
           }
         ],
         "suites": [],
         "passes": [],
-        "failures": [
-          "a9e32285-8360-46d8-9c23-c0c31d0f5a64",
-          "006ae069-f5f6-479e-bb5e-1e2bf887ecff"
-        ],
+        "failures": [],
         "pending": [],
-        "skipped": [],
-        "duration": 30012,
+        "skipped": [
+          "98e63f19-992b-4acb-b2de-f7e5af81227e",
+          "b0511925-756e-45e6-b026-657c595e43db"
+        ],
+        "duration": null,
         "root": false,
         "rootEmpty": false,
         "_timeout": 50000

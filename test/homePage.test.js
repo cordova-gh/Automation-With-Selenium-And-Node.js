@@ -17,7 +17,7 @@ process.on('unhandledRejection', () => {});
             beforeEach (async () => {
                 page = new Page();
                 driver = page.driver;
-                await page.visit('https://www.leggo.it');
+                await page.visit('https://www.google.it');
             });
 
             afterEach (async () => {
